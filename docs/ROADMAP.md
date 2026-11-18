@@ -49,15 +49,17 @@ Referências: `docs/CONCEPT.md` (documento principal) e o prompt de produção d
 | # | Etapa | Status |
 |---|---|---|
 | 0 | Auditoria e plano | ✅ |
-| 1 | Movimento e câmera: rato placeholder, corrida predita, pulo, escalada em `AClimbVolume` | 🔧 em andamento |
-| 2 | Cozinha greybox: plataformas, rotas, pontos de spawn e de queijo, navmesh | ⏳ |
-| 3 | Queijo e partida: queijo único, posse, E/G, queda na morte, 120 s, vitória/derrota | ⏳ |
-| 4 | Armas e combate: estilingue de rolhas, disparador de tampinhas, vida, kills, respawn seguro | ⏳ |
-| 5 | Bots: nomes únicos, perfis, percepção, navegação, combate | ⏳ |
-| 6 | Menu e UI: Iniciar, mapa, bots, arma, HUD, feed, Tab, resultado, reinício | ⏳ |
-| 7 | Arte e polimento: modelos do Blender, materiais, iluminação baked, perfis gráficos | ⏳ |
-| 8 | Validação de replicação: auditoria de autoridade e estado | contínua desde a Etapa 1 |
-| 9 | Listen Server com 2 processos: host + cliente, fluxo de conexão no menu | ⏳ |
-| 10 | Build empacotado: teste sem Editor/MCP, FPS e VRAM, LAN | ⏳ |
+| 1 | Movimento e câmera: rato placeholder, corrida predita, pulo, escalada em `AClimbVolume` | ✅ validado (escalada da bancada no log) |
+| 2 | Cozinha greybox: plataformas, rotas, pontos de spawn e de queijo, navmesh e navlinks | ✅ gerada por `Tools/Unreal/build_levels.py` |
+| 3 | Queijo e partida: queijo único, posse, E/G, queda na morte, 120 s, vitória/derrota | ✅ (o caso "ninguém venceu" ainda não foi observado) |
+| 4 | Armas e combate: estilingue de rolhas, lançador de tampinhas, vida, kills, respawn seguro | ✅ |
+| 5 | Bots: nomes únicos, perfis, percepção, navegação, combate | ✅ v1 simples |
+| 6 | Menu e UI: Iniciar, mapa, bots, arma, HUD, feed, Tab, resultado, reinício | ✅ |
+| 7 | Arte e polimento: modelos do Blender, materiais, iluminação, perfis gráficos | 🔧 só a iluminação interna quente e o material sólido; modelos ainda não feitos |
+| 8 | Validação de replicação: auditoria de autoridade e estado | ✅ regras no servidor e feed idêntico em host e cliente |
+| 9 | Listen Server com 2 processos: host + cliente, fluxo de conexão no menu | ✅ 2 processos locais. LAN entre 2 PCs não testada |
+| 10 | Build empacotado: teste sem Editor/MCP, FPS e VRAM | 🔧 ver o relatório da Etapa 10 abaixo |
+
+Detalhes de teste: `docs/TESTING.md`. Valores: `docs/BALANCE.md`.
 
 Padrão do Tab: **segurar para mostrar** (fecha ao soltar), como em shooters competitivos.
