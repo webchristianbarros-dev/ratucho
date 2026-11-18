@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.8",
+	"Category": "",
+	"Description": "Ratucho - projeto comercial (UE 5.8.4)",
+	"Plugins": [
+		{ "Name": "ModelingToolsEditorMode", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "PythonScriptPlugin", "Enabled": true },
+		{ "Name": "EditorScriptingUtilities", "Enabled": true },
+		{ "Name": "ModelContextProtocol", "Enabled": true },
+		{ "Name": "ToolsetRegistry", "Enabled": true },
+		{ "Name": "EditorToolset", "Enabled": true },
+		{ "Name": "UMGToolSet", "Enabled": true },
+		{ "Name": "ConfigSettingsToolset", "Enabled": true },
+		{ "Name": "GameplayTagsToolset", "Enabled": true },
+		{ "Name": "AutomationTestToolset", "Enabled": true },
+		{ "Name": "PluginToolset", "Enabled": true },
+		{ "Name": "AnimationAssistantToolset", "Enabled": true },
+		{ "Name": "AIModuleToolset", "Enabled": true },
+		{ "Name": "StateTreeToolset", "Enabled": true },
+		{ "Name": "PhysicsToolsets", "Enabled": true }
+	],
+	"TargetPlatforms": [ "Windows" ]
+}

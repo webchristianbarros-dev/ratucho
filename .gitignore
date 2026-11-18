@@ -1,0 +1,41 @@
+# ---- Unreal Engine: gerados localmente ----
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/Windows/
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+.vs/
+.vsconfig.local
+.idea/
+*.code-workspace
+
+# ---- Builds empacotados ----
+Packaged/
+Releases/
+*.pak
+*.ucas
+*.utoc
+
+# ---- Blender ----
+*.blend1
+*.blend2
+*.blend@
+__pycache__/
+
+# ---- Sistema / ferramentas ----
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
+.claude/settings.local.json
