@@ -1,7 +1,14 @@
 # Ratucho — guia para o Claude Code
 
 Jogo comercial em **Unreal Engine 5.8.4** (`C:\Users\Chris\Epic Games\UE_5.8`) com arte feita no **Blender 5.3**.
-Projeto: `Ratucho.uproject` na raiz do repositório. No momento é só Blueprint; o C++ será adicionado depois (ver `docs/ENVIRONMENT.md`).
+Projeto oficial: `Ratucho.uproject` na raiz do repositório (a pasta `ratucho\Ratucho\` é um projeto em branco antigo, não usar).
+Regras, rede, armas, queijo e IA ficam em **C++** (`Source/Ratucho`). Blueprints e Data Assets cuidam de visual, UI e balanceamento.
+Documentos: `docs/CONCEPT.md` (visão do jogo), `docs/ROADMAP.md` (etapas e status) e `docs/BALANCE.md` (valores iniciais).
+
+## Compilar
+- Feche o editor deste projeto (o Live Coding bloqueia a UBT) e rode:
+  `& "C:\Users\Chris\Epic Games\UE_5.8\Engine\Build\BatchFiles\Build.bat" RatuchoEditor Win64 Development "-Project=C:\Users\Chris\Documents\GitHub\ratucho\Ratucho.uproject" -WaitMutex`
+- Toda regra de gameplay roda no servidor (`HasAuthority`). O cliente só envia RPCs `Server...`.
 
 ## Ferramentas conectadas (MCP)
 - **unreal** → plugin nativo da Epic `ModelContextProtocol`, em `http://127.0.0.1:8000/mcp`. Só responde com o editor aberto.

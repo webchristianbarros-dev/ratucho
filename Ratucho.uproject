@@ -3,22 +3,31 @@
 	"EngineAssociation": "5.8",
 	"Category": "",
 	"Description": "Ratucho - projeto comercial (UE 5.8.4)",
+	"Modules": [
+		{
+			"Name": "Ratucho",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [ "Engine", "EnhancedInput", "AIModule" ]
+		}
+	],
 	"Plugins": [
+		{ "Name": "EnhancedInput", "Enabled": true },
 		{ "Name": "ModelingToolsEditorMode", "Enabled": true, "TargetAllowList": [ "Editor" ] },
-		{ "Name": "PythonScriptPlugin", "Enabled": true },
-		{ "Name": "EditorScriptingUtilities", "Enabled": true },
-		{ "Name": "ModelContextProtocol", "Enabled": true },
-		{ "Name": "ToolsetRegistry", "Enabled": true },
-		{ "Name": "EditorToolset", "Enabled": true },
-		{ "Name": "UMGToolSet", "Enabled": true },
-		{ "Name": "ConfigSettingsToolset", "Enabled": true },
-		{ "Name": "GameplayTagsToolset", "Enabled": true },
-		{ "Name": "AutomationTestToolset", "Enabled": true },
-		{ "Name": "PluginToolset", "Enabled": true },
-		{ "Name": "AnimationAssistantToolset", "Enabled": true },
-		{ "Name": "AIModuleToolset", "Enabled": true },
-		{ "Name": "StateTreeToolset", "Enabled": true },
-		{ "Name": "PhysicsToolsets", "Enabled": true }
+		{ "Name": "PythonScriptPlugin", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "EditorScriptingUtilities", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "ModelContextProtocol", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "ToolsetRegistry", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "EditorToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "UMGToolSet", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "ConfigSettingsToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "GameplayTagsToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "AutomationTestToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "PluginToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "AnimationAssistantToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "AIModuleToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "StateTreeToolset", "Enabled": true, "TargetAllowList": [ "Editor" ] },
+		{ "Name": "PhysicsToolsets", "Enabled": true, "TargetAllowList": [ "Editor" ] }
 	],
 	"TargetPlatforms": [ "Windows" ]
 }
